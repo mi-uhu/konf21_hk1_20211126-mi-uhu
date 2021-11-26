@@ -20,4 +20,11 @@ class AccountTest {
         Assertions.assertEquals(100.0, accountMichael.getAmount());
     }
 
+
+    @Test
+    void testSingleCredit() {
+        accountMichael.credit(120.0);
+        Assertions.assertEquals(220.0, accountMichael.getAmount());
+    }
+
 }
