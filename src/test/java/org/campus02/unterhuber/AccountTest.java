@@ -37,4 +37,18 @@ class AccountTest {
         accountMichael.credit(130.0);
         Assertions.assertEquals(460.0, accountMichael.getAmount());
     }
+
+
+    @Test
+    void testDebitOk90() {
+        Assertions.assertTrue( accountMichael.debit(90.0));
+        Assertions.assertEquals(10.0, accountMichael.getAmount());
+    }
+
+
+    @Test
+    void testDebitOk100() {
+        Assertions.assertTrue( accountMichael.debit(100.0));
+        Assertions.assertEquals(0.0, accountMichael.getAmount());
+    }
 }
