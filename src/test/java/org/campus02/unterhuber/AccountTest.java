@@ -27,4 +27,14 @@ class AccountTest {
         Assertions.assertEquals(220.0, accountMichael.getAmount());
     }
 
+
+    @Test
+    void testMultiCredit() {
+        accountMichael.credit(110.0);
+        Assertions.assertEquals(210.0, accountMichael.getAmount());
+        accountMichael.credit(120.0);
+        Assertions.assertEquals(330.0, accountMichael.getAmount());
+        accountMichael.credit(130.0);
+        Assertions.assertEquals(460.0, accountMichael.getAmount());
+    }
 }
