@@ -5,13 +5,12 @@ public class Account {
     private double amount;
 
     public Account(String accountOwner) {
-        // TODO: Das Attribut owner muss mit dem Wert des Parameters accountOwner initialisiert werden
-
-        // TODO: Das Attribut amount muss mit dem Wert 100.0 initialisiert werden
+        this.owner = accountOwner;
+        this.amount = 100.0;
     }
 
     public void credit(double value) {
-        // TODO: Der Betrag value soll auf den verfuegbaren Betrag amount aufgebucht werden (amount um value erhoehen)
+        this.amount += value;
     }
 
     public boolean debit (double value) {
