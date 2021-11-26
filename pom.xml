@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.campus02.change_me</groupId> <!-- Ihren Nachnamen anstelle von change_me angeben und packages dementsprechend benennen -->
+    <artifactId>change_me</artifactId> <!-- artifactId für das Projekt setzen -->
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <!-- Dependency für JUnit5 (junit-jupiter-engine) in der Version 5.8.0 hinzufügen-->
+
+    <!-- Plugin für automatisierte Unit Tests (maven-surfire) in der Version 2.22.2 hinzufügen -->
+
+    
+</project>
