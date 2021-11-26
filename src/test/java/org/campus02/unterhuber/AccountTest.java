@@ -51,4 +51,11 @@ class AccountTest {
         Assertions.assertTrue( accountMichael.debit(100.0));
         Assertions.assertEquals(0.0, accountMichael.getAmount());
     }
+
+
+    @Test
+    void testDebitNotOk120() {
+        Assertions.assertFalse( accountMichael.debit(120.0));
+        Assertions.assertEquals(100.0, accountMichael.getAmount());
+    }
 }

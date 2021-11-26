@@ -24,7 +24,6 @@ public class Account {
             return true;
         }
         else {
-            amount = amount - value;
             return false;
         }
     }
