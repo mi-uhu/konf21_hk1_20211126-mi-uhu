@@ -1,4 +1,4 @@
-package org.campus02.change_me;
+package org.campus02.unterhuber;
 
 public class Account {
     private String owner;

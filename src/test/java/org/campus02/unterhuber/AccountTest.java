@@ -1,4 +1,4 @@
-package org.campus02.change_me;
+package org.campus02.unterhuber;
 
 import org.junit.jupiter.api.Test;
 

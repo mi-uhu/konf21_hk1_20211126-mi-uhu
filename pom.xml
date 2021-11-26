@@ -4,18 +4,31 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.campus02.change_me</groupId> <!-- Ihren Nachnamen anstelle von change_me angeben und packages dementsprechend benennen -->
-    <artifactId>change_me</artifactId> <!-- artifactId für das Projekt setzen -->
+    <groupId>org.campus02.unterhuber</groupId>
+    <artifactId>accountManagement</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.0</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-    <!-- Dependency für JUnit5 (junit-jupiter-engine) in der Version 5.8.0 hinzufügen-->
-
-    <!-- Plugin für automatisierte Unit Tests (maven-surfire) in der Version 2.22.2 hinzufügen -->
-
-    
 </project>
